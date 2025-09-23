@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento JS</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body onresize="alert('Página redimensionada')">
+    <h1>JavaScript</h1>
+    <p id="texto"></p>
+    <button onclick="eventoClick()">Clique aqui</button>
+    <button ondblclick="eventoDblClick()">Duplo Clique Aqui</button>
+    <br>
+    <div id="teste" ="adicionaTexto()" onmouseover="viraVer()" style="margin:auto auto; width:80%; height:200px; background:blue">
+
+    </div>
+    <br>
+    <input onkeydown="teclaPressionada()" onblur="eventoClick()" id="texto1" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" value="Texto já escrito">
+
+    <script src="arrays.js"></script>
+    </body>
+</html>
