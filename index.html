@@ -9,26 +9,34 @@
     body{
         text-align: center;
     }
+    .start{
+        background: green;
+    }
+    .stop{
+        background: red;
+    }
 </style>
-<body onresize="alert('Página redimensionada')">
-    <h1>JavaScript</h1>
-    <p id="teste"></p><br>
+<body>
+    <h1>Controle de tempo</h1>
+    <h2 id="tempo">0</h2>
+    <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+    <button class="stop">Parar Contagem</button>
 
-    <input id="cor" style="padding:50px; font-size:40px;" type="text" placeholder="Digite uma cor" oninput="limparMensagem()">
+
+<!--  <select id="ano">
+        <option selected disabled>Selecione o ano</option>
+    </select>
+input id="cor" style="padding:50px; font-size:40px;" type="text" placeholder="Digite uma cor" oninput="limparMensagem()">
     <button onclick="verificaCor()" style="padding: 50px;">Verificar</button>
     <br><br>
-
-
     <button onclick="eventoClick()">Clique aqui</button>
     <button ondblclick="eventoDblClick()">Duplo Clique Aqui</button>
     <br>
     <div id="teste2" ="adicionaTexto()" onmouseover="viraVer()" style="margin:auto auto; width:80%; height:200px; background:blue">
-
     </div>
     <br>
     <input onkeydown="teclaPressionada()" onblur="eventoClick()" id="texto1" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" value="Texto já escrito">
-
-    
-    <script src="switch.js"></script>
+-->    
+    <script src="timeevent.js"></script>
     </body>
 </html>
