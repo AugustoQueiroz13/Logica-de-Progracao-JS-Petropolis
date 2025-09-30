@@ -9,10 +9,19 @@ Os dois métodos-chave para usar eventos de tempo em JavaScript são:
 
 - setInterval (function, miliseundos)
 --> É o esmo que o SetTimeout(), mas repete a execução da funação continuamente.
-*/
+
 
 function ativarContagem(){
     document.getElementById('tempo').innerHTML = "Começou a contar!";
-    setTimeout(function(){document.getElementById('tempo').innerHTML = "Contagem finalizada";}, 5000);
-        
-} 
+//ativa a função uma vez quando der o tempo determinado
+    setTimeout(function(){document.body.style.backgroundColor = "red";}, 5000);
+} */
+
+    tempo = setInterval(function() {
+        var cronometro = document.getElementById('tempo').innerHTML;
+        var soma = parseInt(cronometro) + 1;
+        document.getElementById('tempo').innerHTML = soma;
+    }, 1000);
+function pararContagem() {
+    clearInterval(tempo);
+}
