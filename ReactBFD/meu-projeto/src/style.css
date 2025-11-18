@@ -1,0 +1,11 @@
+.container {
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bloco {
+    background-color: coral;
+    width: 200px;
+    height: 200px;
+}

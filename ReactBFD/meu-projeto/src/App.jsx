@@ -1,27 +1,17 @@
-import logoReact from "/src/assets/react.svg"
+import React from 'react'
+import { Dados } from './components/Dados.jsx';
+import { Botao } from './components/Botao.jsx';
 
-function App() {
-  const mensagem = "Olá mundo!";
-  let numero = 10;
-  return (
-    
-    <main>
-    <div>App</div>
-    <h1> Título 1</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure omnis modi labore itaque in.</p>
-    <button>Botão</button>
-    <hr />
-    <span>{mensagem}</span> 
-    {numero}
-    <img src="vite.svg" alt="logo vite"/>
-    < img src={logoReact} alt="logo react"/>
-    </main>
-  )
+export function App() {
+return (
+    <>
+    <h1>Componente App</h1>
+    <Dados />
+    <Botao />
+    </>
+)
 }
 
 export default App
 
-// JS => {}
-// Nome de Propriedade ou método => Convenção CamelCase
-// Arquivo dentro da pasta "public" = arquivo comum => Passar o nome do arquivo
-// pastas ou imagens dentro da pasta "src" => precisa ser importado para utilizar
+//rfce
